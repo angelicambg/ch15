@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "index.html#why-pdf",
+    "href": "index.html#why-pdf",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Why PDF?",
+    "text": "Why PDF?\n\n\n\n\n\n\n\nOffline access\nCross-Platform Consistency\nFacilitate distribution\nLong-Term Storage\nNon-Editable Format\n\n\n\n\n\nImage by vectorjuice on Freepik\n\nOffline access\n\nPDFs can be accessed and read offline, making them convenient for users without continuous internet access.\n\nCross-Platform Consistency\n\nPDFs appear the same on all devices and systems, ensuring that everyone sees the same content.\n\nFacilitate distribution\n\nelectronically and in printed form, and they can be compressed without compromising quality.\n\nLong-Term Storage\n\nThe stability of the PDF format over time ensures that documents remain accessible and readable.\n\nNon-Editable Format\n\nPDFs are more difficult to alter than other document types, ensuring that the data presented remains unchanged from its original submission. This is critical in regulatory environments where data integrity is paramount.\n\n\nImage by vectorjuice on Freepik, modified by the author"
+  },
+  {
+    "objectID": "index.html#section-11",
+    "href": "index.html#section-11",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "",
+    "text": "and think the time to deal with logos, positioning, colors schemes, …"
+  },
+  {
+    "objectID": "index.html#section-16",
+    "href": "index.html#section-16",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "",
+    "text": "Top left image by by storyset on Freepik"
+  },
+  {
+    "objectID": "index.html#section-17",
+    "href": "index.html#section-17",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "",
+    "text": "Top left image by by storyset on Freepik\nBottom left image by pch.vector on Freepik, modified by the author"
+  },
+  {
+    "objectID": "index.html#how-can-we-include-these-elements-using-rmarkdown",
+    "href": "index.html#how-can-we-include-these-elements-using-rmarkdown",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "How can we include these elements using Rmarkdown?",
+    "text": "How can we include these elements using Rmarkdown?\n\n\nBackground image by pch.vector on Freepik, modified by the author"
+  },
+  {
+    "objectID": "index.html#how-can-we-include-these-elements-using-rmarkdown-1",
+    "href": "index.html#how-can-we-include-these-elements-using-rmarkdown-1",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "How can we include these elements using Rmarkdown?",
+    "text": "How can we include these elements using Rmarkdown?\n\n\n\nBackground image by pch.vector on Freepik, modified by the author"
+  },
+  {
+    "objectID": "index.html#logo",
+    "href": "index.html#logo",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Logo",
+    "text": "Logo\n---\ntitle: \"Document with logo\"\nheader-includes: \n   \\usepackage{graphicx}\n   \\usepackage{fancyhdr}\n   \\pagestyle{fancy}\n   \\setlength\\headheight{28pt}\n   \\fancyhead[L]{\\includegraphics[width=10cm]{logo.png}}\n   \\fancyfoot[LE,RO]{GPIM}\noutput: pdf_document\n---"
+  },
+  {
+    "objectID": "index.html#logo-in-the-first-page",
+    "href": "index.html#logo-in-the-first-page",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Logo in the first page",
+    "text": "Logo in the first page\n---\ntitle: \"Document with logo\"\nheader-includes: \n   \\usepackage{graphicx}\n   \\usepackage{fancyhdr}\n   \\pagestyle{fancy}\n   \\setlength\\headheight{28pt}\n   \\fancyhead[L]{\\includegraphics[width=10cm]{logo.png}}\n   \\fancyfoot[LE,RO]{GPIM}\noutput: pdf_document\n---\n\n\\addtolength{\\headheight}{1.0cm} \n\\fancypagestyle{plain}{} the first page\n\\thispagestyle{fancy} \n\\fancyhead[L]{\\includegraphics[width = 100pt]{logo.png}}\n\\renewcommand{\\headrulewidth}{0pt}"
+  },
+  {
+    "objectID": "index.html#logo-in-the-first-page-1",
+    "href": "index.html#logo-in-the-first-page-1",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Logo in the first page",
+    "text": "Logo in the first page\n---\ntitle: \"Document with logo\"\nheader-includes: \n   \\usepackage{graphicx}\n   \\usepackage{fancyhdr}\n   \\pagestyle{fancy}\n   \\setlength\\headheight{28pt}\n   \\fancyhead[L]{\\includegraphics[width=10cm]{logo.png}}\n   \\fancyfoot[LE,RO]{GPIM}\noutput: pdf_document\n---\n\n\\addtolength{\\headheight}{1.0cm} \n\\fancypagestyle{plain}{} the first page\n\\thispagestyle{fancy} \n\\fancyhead[L]{\\includegraphics[width = 100pt]{logo.png}}\n\\renewcommand{\\headrulewidth}{0pt}"
+  },
+  {
+    "objectID": "index.html#header-and-footer",
+    "href": "index.html#header-and-footer",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Header and Footer",
+    "text": "Header and Footer\n---\ntitle: \"Document with logo\"\nheader-includes: \n   - \\usepackage{graphicx}\n   - \\usepackage{fancyhdr}\n   - \\pagestyle{fancy}\n   - \\setlength\\headheight{28pt}\n   - \\fancyhead[L]{\\includegraphics[width=5cm]{cynkra-logo.png}}\n   - \\fancyfoot[LE,RO]{GPIM}\n   - \\usepackage{fancyhdr}\n   - \\pagestyle{fancy}\n   - \\fancyhead[CO,CE]{This is fancy header}\n   - \\fancyfoot[CO,CE]{And this is a fancy footer}\n   - \\fancyfoot[LE,RO]{\\thepage}\noutput: pdf_document\n---\n\n\\addtolength{\\headheight}{1.0cm} \n\\fancypagestyle{plain}{} the first page\n\\thispagestyle{fancy} \n\\fancyhead[L]{\\includegraphics[width = 100pt]{cynkra-logo.png}}\n\\renewcommand{\\headrulewidth}{0pt}"
+  },
+  {
+    "objectID": "index.html#section-22",
+    "href": "index.html#section-22",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "",
+    "text": "After setting up the colors, fonts, table of content…\n\n\n\nImage by pch.vector on Freepik"
+  },
+  {
+    "objectID": "index.html#section-23",
+    "href": "index.html#section-23",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "",
+    "text": "Image by storyset on Freepik"
+  },
+  {
+    "objectID": "index.html#templates",
+    "href": "index.html#templates",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Templates",
+    "text": "Templates\n\n\n\n\n\n\n\nCreate R Markdown templates in 3 steps from Chapter 13 in rstudio4edu\n\n\nuse_rmarkdown_template()\nCreate your template\nConfirm that your template is accessible"
+  },
+  {
+    "objectID": "index.html#some-issues",
+    "href": "index.html#some-issues",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Some issues",
+    "text": "Some issues\n\n\n\nno idea about the errors\nno idea about Latex\nSome elements missing\n\n\n\n\n\n\n\n\n\nImage by pch.vector on Freepik"
+  },
+  {
+    "objectID": "index.html#section-24",
+    "href": "index.html#section-24",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "",
+    "text": "Image by pch.vector on Freepik"
+  },
+  {
+    "objectID": "index.html#indiedown",
+    "href": "index.html#indiedown",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Indiedown",
+    "text": "Indiedown\n\n\nYour package is like a director, helping users seamlessly integrate detailed scripts (LaTeX code) into scenes (R chunks) to create impressive films (rmarkdown documents)."
+  },
+  {
+    "objectID": "index.html#indiedown-1",
+    "href": "index.html#indiedown-1",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Indiedown",
+    "text": "Indiedown\n\n\nYour package is like a director, helping users seamlessly integrate detailed scripts (LaTeX code) into scenes (R chunks) to create impressive films (rmarkdown documents)."
+  },
+  {
+    "objectID": "index.html#indiedown-2",
+    "href": "index.html#indiedown-2",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Indiedown",
+    "text": "Indiedown\n\n\n\nKeep all corporate design elements as  code\nindiedown does not modify the default .tex. Extends Pandoc .tex"
+  },
+  {
+    "objectID": "index.html#indiedown---first-steps",
+    "href": "index.html#indiedown---first-steps",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Indiedown - First steps",
+    "text": "Indiedown - First steps\n\nInstallation\n\ninstall.packages(\"indiedown\")\n\n\n\nCreate your own package\n\nindiedown::create_indiedown_package(\"templateuser2024\")\n\n\n\nBuild your package using Build and Reload in RStudio or with:\n\ndevtools::install(\"templateuser2024\")"
+  },
+  {
+    "objectID": "index.html#you-have-created-the-first-template",
+    "href": "index.html#you-have-created-the-first-template",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "You have created the first template",
+    "text": "You have created the first template\n\n\n\nImage by jcomp on Freepik"
+  },
+  {
+    "objectID": "index.html#you-have-created-the-first-template-1",
+    "href": "index.html#you-have-created-the-first-template-1",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "You have created the first template",
+    "text": "You have created the first template\n\n\nAfter the new package is built and installed, you will have available the new template (after restart)"
+  },
+  {
+    "objectID": "index.html#customization-points",
+    "href": "index.html#customization-points",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points\n\n\n\n\nfonts\ngeometry\nlinestretch\npapersize\ncheck all pandoc options"
+  },
+  {
+    "objectID": "index.html#customization-points-1",
+    "href": "index.html#customization-points-1",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points\n\n\n\n\n\nLatex packages \\usepackage{glossaries-extra}\nLatex packages used by R packages; like \\usepackage{longtable}\nAdvanced: Define new Latex environments"
+  },
+  {
+    "objectID": "index.html#customization-points-2",
+    "href": "index.html#customization-points-2",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points\n\n\n\n\n\n\nDynamically modify pandoc options, using R.\n\nDifferent geometry (margins) if twocolumn is true.\nDifferent linestretch when landscape is used."
+  },
+  {
+    "objectID": "index.html#customization-points-3",
+    "href": "index.html#customization-points-3",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points\n\n\n\n\n\n\n\nInclude corporate design elements with functions\nuses indiedown_glue() to wrap literal LaTeX code in R.\nExpressions enclosed by ⁠&lt;&lt;⁠ and ⁠&gt;&gt;⁠ will be evaluated as R code."
+  },
+  {
+    "objectID": "index.html#customization-points-4",
+    "href": "index.html#customization-points-4",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points\n\n\n\n\n\n\n\ncd_header &lt;- function(header_text_right = \"\",\n                      header_text_left = \"\") {\n  indiedown_glue(\n   r\"(\n   \\newcommand\\hcrule[3][black]{\\textcolor{#1}{\\rule[-2mm]{#2}{#3}}}\n   \\thispagestyle{fancy}\n   \\fancyhead[LE]{\\thepage \\hcrule[dunkelorange]{.5mm}{7mm} &lt;&lt;header_text_right&gt;&gt;}\n   \\fancyhead[RO]{&lt;&lt;header_text_left&gt;&gt; \\hcrule[dunkelorange]{.5mm}{7mm} \\thepage}\n   )\")}"
+  },
+  {
+    "objectID": "index.html#customization-points-5",
+    "href": "index.html#customization-points-5",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points\n\n\n\n\n\n\n\ncd_header(header_text_right = \"Statistische Mitteilung 2/2022\",\n          header_text_left = \"Wohnbevölkerung der Politischen Gemeinden 2023\")"
+  },
+  {
+    "objectID": "index.html#customization-points-6",
+    "href": "index.html#customization-points-6",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points\n\n\n\n\n\n\n\nRmd template to final user.\nShown in Rstudio when ’New R Markdown Document’ is selected and then ‘from Template’.\nYou can also use usethis::use_rmarkdown_template() to add a new template."
+  },
+  {
+    "objectID": "index.html#customization-points-7",
+    "href": "index.html#customization-points-7",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points"
+  },
+  {
+    "objectID": "index.html#main-customization-point",
+    "href": "index.html#main-customization-point",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Main customization point",
+    "text": "Main customization point"
+  },
+  {
+    "objectID": "index.html#convert-the-template",
+    "href": "index.html#convert-the-template",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Convert the template",
+    "text": "Convert the template\n---\ntitle: \"Document with logo\"\nheader-includes: \n   - \\usepackage{graphicx}\n   - \\usepackage{fancyhdr}\n   - \\pagestyle{fancy}\n   - \\setlength\\headheight{28pt}\n   - \\fancyhead[L]{\\includegraphics[width=10cm]{logo_here.png}}\noutput: pdf_document\n---\n\n\\addtolength{\\headheight}{1.0cm}\n\\fancypagestyle{plain}{} the first page\n\\thispagestyle{fancy}\n\\fancyhead[L]{\\includegraphics[width = 100pt]{logo_here.png}}\n\\renewcommand{\\headrulewidth}{0pt}"
+  },
+  {
+    "objectID": "index.html#to-this-template",
+    "href": "index.html#to-this-template",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "To this template",
+    "text": "To this template\n---\ntitle: \"Document with logo\"\noutput: templateuser2024::templateuser2024\n---\n\n```{r}\nlibrary(templateuser2024)\ncd_knit_chunk_opts()\n```\n\n\n```{r}\ncd_page_title()\ncd_footer()\n```"
+  },
+  {
+    "objectID": "index.html#customization-points-8",
+    "href": "index.html#customization-points-8",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Customization points",
+    "text": "Customization points"
+  },
+  {
+    "objectID": "index.html#with-indiedown",
+    "href": "index.html#with-indiedown",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "With indiedown",
+    "text": "With indiedown\n\n\n\n\n\n\n\nThe template is friendly to the final user.\nCustomization in R functions.\nAll corporate design elements are in the package."
+  },
+  {
+    "objectID": "index.html#publications-using-indiedown",
+    "href": "index.html#publications-using-indiedown",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Publications using indiedown",
+    "text": "Publications using indiedown\n\n\n\n\n\n\nSelect the image and logos for the first page.\nChoose different layouts for each page.\nChoose boxes based on their needs."
+  },
+  {
+    "objectID": "index.html#publications-using-indiedown-1",
+    "href": "index.html#publications-using-indiedown-1",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Publications using indiedown",
+    "text": "Publications using indiedown"
+  },
+  {
+    "objectID": "index.html#quarto-and-typst",
+    "href": "index.html#quarto-and-typst",
+    "title": "Achieving Corporate Design Consistency in Reports with Indiedown",
+    "section": "Quarto and Typst?",
+    "text": "Quarto and Typst?\n\n\n\nImage by storyset on Freepik"
+  },
+  {
+    "objectID": "Presentation.html",
+    "href": "Presentation.html",
+    "title": "Presentation",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Presentation.html#quarto",
+    "href": "Presentation.html#quarto",
+    "title": "Presentation",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  }
+]
